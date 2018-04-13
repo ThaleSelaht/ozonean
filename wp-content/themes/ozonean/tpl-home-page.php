@@ -63,15 +63,15 @@
 				</div>
 				<div class="col-lg-7 offset-lg-1">
 					<div class="box">
-						<img class="img-fluid" src="./wp-content/uploads/ozonean-lab.png" alt="Ozonean Lab">
+						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-lab.png'; ?>" alt="Ozonean Lab">
 						<button>Saiba Mais</button>
 					</div>
 					<div class="box">
-						<img class="img-fluid" src="./wp-content/uploads/ozonean-tree.png" alt="Ozonean Tree">
+						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-tree.png'; ?>" alt="Ozonean Tree">
 						<button>Saiba Mais</button>
 					</div>
 					<div class="box">
-						<img class="img-fluid" src="./wp-content/uploads/ozonean-wm.png" alt="Ozonean WM">
+						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-wm.png'; ?>" alt="Ozonean WM">
 						<button>Saiba Mais</button>
 					</div>
 				</div>
@@ -87,6 +87,7 @@
 					<?php
 					$args = array(
 					    'numberposts' => 8,
+					    'post_status' => 'publish'
 					);
 
 					$recent_posts = wp_get_recent_posts( $args );
@@ -131,7 +132,7 @@
 			    <div>
 			    	<div class="depo-box">
 			    		<span>
-			    			<img src="./wp-content/uploads/sergio-junqueira.jpg" alt="">
+			    			<img src="<?php echo get_home_url() . '/wp-content/uploads/sergio-junqueira.jpg'; ?>" alt="">
 							<h5>Sérgio Junqueira</h5>
 							<h6>CEO do Bartô</h6>
 			    		</span>
@@ -141,7 +142,7 @@
 			    <div>
 			    	<div class="depo-box">
 			    		<span>
-			    			<img src="./wp-content/uploads/marcio-teruel.jpg" alt="">
+			    			<img src="<?php echo get_home_url() . '/wp-content/uploads/marcio-teruel.jpg'; ?>" alt="">
 							<h5>Márcio Teruel</h5>
 							<h6>Diretor da Contri Contabilidade e da SESCON-SP</h6>
 			    		</span>
@@ -152,7 +153,7 @@
 			    <div>
  	     	    	<div class="depo-box">
  	     	    		<span>
- 	     	    			<img src="./wp-content/uploads/sergio-junqueira.jpg" alt="">
+ 	     	    			<img src="<?php echo get_home_url() . '/wp-content/uploads/sergio-junqueira.jpg'; ?>" alt="">
 							<h5>Sérgio Junqueira</h5>
 							<h6>CEO do Bartô</h6>
 			    			</span>
@@ -162,7 +163,7 @@
  	     	    <div>
 			    	<div class="depo-box">
 			    		<span>
-			    			<img src="./wp-content/uploads/marcio-teruel.jpg" alt="">
+			    			<img src="<?php echo get_home_url() . '/wp-content/uploads/marcio-teruel.jpg'; ?>" alt="">
 							<h5>Márcio Teruel</h5>
 							<h6>Diretor da Contri Contabilidade e da SESCON-SP</h6>
 			    		</span>

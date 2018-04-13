@@ -4,39 +4,7 @@
 	<div id="banner-principal" class="container-fluid inner-page">
 		<div class="row">
 			<div class="col-lg-12 d-flex flex-column">
-				<nav class="navbar navbar-expand-md navbar-dark">
-			      <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
-			      	<img src="<?php echo get_home_url() . '/wp-content/uploads/logo-ozonean.png'?>" alt="Logo Ozonean">
-			      </a>
-			      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="navbar-toggler-icon"></span>
-			      </button>
-			      <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-			        <ul class="navbar-nav ml-auto">
-			          <li class="nav-item">
-			            <a class="nav-link" href="#">OZONEAN <span class="sr-only">(current)</span></a>
-			          </li>
-			          <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="servicos-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				          SERVIÇOS
-				        </a>
-				        <div class="dropdown-menu" aria-labelledby="servicos-dropdown">
-				          <a class="dropdown-item" href="#">Consultorias</a>
-				          <a class="dropdown-item" href="#">Palestras e Workshops</a>
-				        </div>
-				      </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="#">EMPRESAS</a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="#">BLOG</a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="#">CONTATO</a>
-			          </li>
-			        </ul>			        
-			      </div>
-			    </nav>				
+				<?php get_template_part('tpl-navigation'); ?>			
 			</div>
 			<div class="col-lg-12">
 				<header>
@@ -46,7 +14,7 @@
 			<div class="col-lg-12">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-lg-8">
+						<div class="col-xs-12 col-lg-7 offset-lg-1">
 							<?php if(have_posts()) : ?>
 								<?php while(have_posts()) : the_post(); ?>
 								<div class="container-fluid no-padding">
@@ -89,7 +57,7 @@
 							<?php endif; ?>	
 							</div>
 							<!-- Widgets -->
-							<div class="col-lg-4">
+							<div class="col-lg-3">
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-lg-12">

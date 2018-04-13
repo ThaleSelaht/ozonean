@@ -32,3 +32,11 @@ function init_widgets($id){
 	));
 }
 add_action('widgets_init', 'init_widgets');
+
+add_action('widgets_init', 'init_widgets');
+	//Excerp Length
+	function lab_set_excerpt_length(){
+		return 40;
+	}
+
+add_filter('excerpt_length', 'lab_set_excerpt_length');

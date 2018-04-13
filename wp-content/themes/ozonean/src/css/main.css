@@ -326,6 +326,9 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	display: flex;
 	flex-direction: column;
 }
+.inner-page a.blog-box:hover{
+	text-decoration: none;
+}
 .inner-page .blog-box > span:nth-child(1) img{
 	object-fit: cover;
 	height: 250px;
@@ -487,7 +490,46 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	font-size: 16px;
 	color: #7799A9;
 }
-.widget-lateral form
+.widget-lateral form input[type="text"]{
+	height: 40px;
+	width: 100%;
+	border-radius: 5px;
+	border: 0;
+}
+.widget-lateral form input[type="submit"]{
+	width:50px;
+	height:40px;
+	border-radius: 5px;
+	border: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#008dcd+1,00bfff+100 */
+	background: #008dcd; /* Old browsers */
+	background: -moz-linear-gradient(left, #008dcd 1%, #00bfff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #008dcd 1%,#00bfff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #008dcd 1%,#00bfff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008dcd', endColorstr='#00bfff',GradientType=1 ); /* IE6-9 */
+}
+.widget-lateral h4{
+	margin-top: 30px;
+	text-align: left;
+	font-size: 16px;
+	color: #7799A9;
+}
+.widget-lateral ul{
+	padding-left:0;
+	list-style: none;
+}
+.widget-lateral ul li a{
+	color: #FFF;
+}
+.widget-lateral ul li.cat-item a{
+	text-transform: uppercase;
+}
+.widget-lateral ul li.cat-item a:before{
+	content: ">";
+}
+.widget-lateral .form-group{
+	margin-bottom: 0;
+}
 /** ##### FIXES ##### **/
 .row{
 	margin:0;
@@ -499,6 +541,13 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	}
 	#banner-principal .navbar-brand img{
 		width: 180px;
+	}
+	#banner-principal.inner-page .container-fluid, #banner-principal.inner-page .col-lg-7, #banner-principal.inner-page .col-lg-3, 
+	#banner-principal.inner-page .col-lg-12{
+		padding: 0;
+	}
+	#banner-principal.inner-page header {
+		padding:40px 0;
 	}
 	#banner-principal nav{
 		margin-top: 5px;
@@ -580,4 +629,43 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	#footer .col-lg-6:nth-child(1) img{
 		height: 50px;
 	}	
+	.blog-single-post-box {
+		padding: 40px 0;
+	}	
+	.blog-single-post-box h1{
+		padding: 0 16px;
+		font-size: 40px;
+	}
+	.blog-single-post-box ul{
+		padding: 0 16px;
+		font-size: 14px;
+	}
+	.blog-single-post-box > img {
+		height: 300px;
+	}
+	.blog-single-post-box .conteudo{
+		margin-top: 40px;
+		padding: 0 16px;
+		font-size: 18px;
+	}
+	.blog-single-post-box h2 {
+		font-size: 30px;
+	}
+	.blog-single-post-box blockquote {
+		margin:0 5px;
+		padding: 18px 10px;
+	}
+	.blog-single-post-box img.img-fluid{
+		margin: 0;
+	}
+	.blog-single-post-bio {
+		padding: 20px 18px;
+	}
+	.blog-single-post-bio span{
+		flex-direction: column;
+		align-items: center;
+	}
+	.blog-single-post-bio span img{
+		margin-bottom: 10px;
+	}
 }

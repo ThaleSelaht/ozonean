@@ -65,6 +65,10 @@
 				$(".caption h4", this).toggleClass('active-h4'); 
 			}
 		);
+		$("#banner-principal.inner-page a.blog-box").hover(
+			function () {
+				$("span:nth-of-type(2)", this).toggleClass('active-caption');
+		});
 	</script>
 	<?php wp_footer() ?>
 </body>
