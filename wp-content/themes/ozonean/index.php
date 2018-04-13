@@ -90,11 +90,13 @@
 					foreach ($recent_posts as $post ) {
 						$date = $post["post_date"];
 						$date = explode(" ",$date);
-						$date = explode("-",$date[0]);					
+						$date = explode("-",$date[0]);		
+						//Buscar imagem relacionada ao post
+						$image = wp_get_attachment_image_src(get_post_thumbnail_id( $post['ID'] ), 'full');		
 					?>					
 					<div>
 				    	<a href="<?php echo $post["guid"]; ?>" class="blog-box">
-				    		<img src="./wp-content/uploads/blog1.png" alt="">
+				    		<img src="<?php echo $image[0] ?>" alt="">
 				    		<div class="caption">
 				    			<h4> <?php echo date("d-m-Y", strtotime($date[0])); ?></h4>
 				    			<h5> <?php echo $post["post_title"]; ?></h5>
@@ -102,10 +104,8 @@
 				    	</a>
 				    </div>
 					<?php
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post['ID'] ), 'thumbnail' );
-						var_dump($image);
+						
 					}
-
 					wp_reset_query();
 					?> 
 			    </section>

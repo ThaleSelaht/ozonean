@@ -68,10 +68,10 @@
 														<?php the_category();?>
 										   			</li>
 										   		</ul>
-										   		<!-- <?php if(has_post_thumbnail()) :?>
-										   		 													<?php the_post_thumbnail() ?>
-										   		 												<?php endif;?> --> 
-												<div class="conteudo"><!-- <?php the_content(); ?> --></div>
+										   		<?php if(has_post_thumbnail()) :?>
+	 													<?php the_post_thumbnail() ?>
+	 											<?php endif;?>
+												<div class="conteudo"><?php the_content(); ?></div>
 										   </div>
 										   <div class="blog-single-post-bio">
 										   		<h4>Sobre <?php the_author_posts_link(); ?></h4>
@@ -93,9 +93,9 @@
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-lg-12">
-											<?php if(is_active_sidebar('sidebar')) : ?>
+											<!-- <?php if(is_active_sidebar('sidebar')) : ?>
 												<?php dynamic_sidebar('sidebar'); ?>
-											<?php endif; ?>
+											<?php endif; ?> -->
 										</div>
 									</div>
 								</div>

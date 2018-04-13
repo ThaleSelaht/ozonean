@@ -301,7 +301,7 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	background: url('../img/min/banner-interno.png') no-repeat top center fixed #0F0F1E;
 	padding-bottom: 90px;
 }
-#banner-principal.inner-page .col-lg-12{	
+#banner-principal.inner-page .col-lg-12, #banner-principal.inner-page .container-fluid{	
 	height: auto;
 }
 #banner-principal.inner-page .row{
@@ -359,15 +359,14 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 }
 /***** SINGLE POST *****/
 .blog-single-post-box{
-	background: #EEE;
+	background: #7799A9;
 	padding: 80px 0 60px 0;
 }
-
 .blog-single-post-box h1{
 	padding: 0 60px;
 	font-size: 60px;
 	font-weight: 700;
-	color: #0E3D67;
+	color: #00000F;
 }
 .blog-single-post-box ul{
 	padding: 0 60px;
@@ -375,7 +374,7 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	flex-wrap: wrap;
 }
 .blog-single-post-box ul li{
-	color: #0E3D67;
+	color: #00000F;
 	display: flex;
 	align-items: center;
 	margin-right: 20px;
@@ -385,12 +384,12 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 }
 
 .blog-single-post-box ul li a{
-	color: #0E3D67;
+	color: #00000F;
 	font-weight: 700;
 }
 .blog-single-post-box ul li a:hover{
 	text-decoration: none;
-	color: #FFCC28;
+	color: #00BFA5;
 }
 .blog-single-post-box .post-categories{
 	display: inline-block;
@@ -411,33 +410,33 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 }
 
 .blog-single-post-box .conteudo p{
-	color: #444;
+	color: #00BFA5;
 	margin-bottom: 20px;
 }
 
 .blog-single-post-bio{
 	padding: 20px 60px;
 	border-radius: 10px;
-	border-left: 10px solid #FFCC28;
-	background: #EEE;
+	border-left: 10px solid #00BFA5;
+	background: #7799A9;
 	margin: 20px 0;
 }
 .blog-single-post-bio img{
 	border-radius: 50px;
 }
 .blog-single-post-bio h4{
-	border-bottom: 1px solid #FFCC28;
+	border-bottom: 1px solid #00BFA5;
 	padding-bottom: 4px;
 	margin-bottom: 20px;
 	font-size: 22px;
 }
 .blog-single-post-bio h4 a{
 	font-weight: 700;
-	color: #0E3D67;
+	color: #00000F;
 }
 .blog-single-post-bio h4 a:hover{
 	text-decoration: none;
-	color: #FFCC28;
+	color: #00BFA5;
 }
 
 .blog-single-post-bio span{
@@ -445,6 +444,7 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 }
 
 .blog-single-post-bio span p{
+	color:#FFF;
 	margin-left: 20px;
 }
 /** ##### FIXES ##### **/
