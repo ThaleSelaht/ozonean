@@ -3,7 +3,9 @@
 		<div  class="container">
 			<div class="row">
 				<div class="col-lg-6">
+					<a href="<?php echo get_site_url() . '/'; ?>">
 					<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/logo-ozonean.png?'?>" alt="Logo Ozonean">
+					</a>
 				</div>
 				<div class="col-lg-6">
 					<header><h3>SIGA-NOS!</h3></header>

@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-lg-12 d-flex flex-column">
 				<nav class="navbar navbar-expand-md navbar-dark">
-			      <a class="navbar-brand" href="#">
+			      <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
 			      	<img src="<?php echo get_home_url() . '/wp-content/uploads/logo-ozonean.png'?>" alt="Logo Ozonean">
 			      </a>
 			      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,9 +93,11 @@
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-lg-12">
-											<!-- <?php if(is_active_sidebar('sidebar')) : ?>
+											<div class="widget-lateral">
+											<?php if(is_active_sidebar('sidebar')) : ?>
 												<?php dynamic_sidebar('sidebar'); ?>
-											<?php endif; ?> -->
+											<?php endif; ?> 
+											</div>
 										</div>
 									</div>
 								</div>

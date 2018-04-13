@@ -2,6 +2,10 @@
 function ozonean_theme_setup(){
 	//Adicionando imagens ao post
 	add_theme_support('post-thumbnails');
+	//Menus
+	register_nav_menus(array(
+		'primary' => __('Menu primário')
+	));
 }
 //Adicionando estilos e scripts
 function add_estilos_e_scripts() {
@@ -15,3 +19,16 @@ function add_estilos_e_scripts() {
 }
 add_action('after_setup_theme', 'ozonean_theme_setup');
 add_action('wp_enqueue_scripts', 'add_estilos_e_scripts' );
+
+//Localização dos Widget
+function init_widgets($id){
+	register_sidebar(array(
+		'name' 		    => 'Sidebar',
+		'id'   		    => 'sidebar',
+		'before_widget' => '<div class="block side-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+add_action('widgets_init', 'init_widgets');
