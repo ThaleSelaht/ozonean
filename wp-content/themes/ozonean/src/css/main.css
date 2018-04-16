@@ -127,6 +127,7 @@ section.blog-carousel a.blog-box{
 	flex-direction: column;
 	cursor: pointer;
 	text-decoration: none;
+	padding: 0 20px;
 }
 section.blog-carousel a.blog-box h4{
 	text-align: left;
@@ -140,9 +141,13 @@ section.blog-carousel a.blog-box h5{
 	font-weight: bold;
 }
 section.blog-carousel .blog-box .caption{
-	width: 260px;
+	min-width: 265px;
 	padding: 30px 20px;
 	background: #00000F;
+}
+section.blog-carousel .blog-box img{
+	object-fit: fill;
+	min-height: 200px;
 }
 .active-caption{
 	background: #22404E!important;

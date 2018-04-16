@@ -101,7 +101,7 @@
 					?>					
 					<div>
 				    	<a href="<?php echo $post["guid"]; ?>" class="blog-box">
-				    		<img src="<?php echo $image[0] ?>" alt="">
+				    		<img class="img-fluid" src="<?php echo $image[0] ?>" alt="">
 				    		<div class="caption">
 				    			<h4> <?php echo date("d-m-Y", strtotime($date[0])); ?></h4>
 				    			<h5> <?php echo $post["post_title"]; ?></h5>
@@ -153,14 +153,14 @@
 			    <div>
  	     	    	<div class="depo-box">
  	     	    		<span>
- 	     	    			<img src="<?php echo get_home_url() . '/wp-content/uploads/sergio-junqueira.jpg'; ?>" alt="">
-							<h5>Sérgio Junqueira</h5>
-							<h6>CEO do Bartô</h6>
+ 	     	    			<img src="<?php echo get_home_url() . '/wp-content/uploads/gilberto-nash.jpg'; ?>" alt="">
+							<h5>Sérgio Nash</h5>
+							<h6>CEO do CinemallTec LLC</h6>
 			    			</span>
-				    		<p>"...a evolução que alcançamos nesses meses tem uma grande parcela da Ozonean, que desde a assinatura do contrato, sempre estiveram disponíveis para alguma dúvida nossa.Se não fosse a Ozonean nós talvez não teríamos a estrutura que temos em desenvolvimento e tecnologia e, talvez a estrutura do negócio não fosse tão bem definida como é. Espero de coração que quem já terminou o processo também, ou os que ainda estão passando por algumas fases que a Ozonean tenha sido tão bom quanto foi pra gente." </p>			    		
+				    		<p>"O trabalho executado pelo time altamente competente da Ozonean no Brasil foi impecável e sempre no controle de todos os assuntos, negócios, desenvolvimento, marketing, tecnologia. Foi essencial para que Cinemall tenha uma presença no Brasil e começar a operar nesta área completamente nova de t-commerce, entretenimento e e-commerce. Eu recomendo a Ozonean para todas as empresas nos U.S. e ao redor do mundo." </p>			    		
  	     	    	</div>	    	
  	     	    </div>
- 	     	    <div>
+ 	     	    <!-- <div>
 			    	<div class="depo-box">
 			    		<span>
 			    			<img src="<?php echo get_home_url() . '/wp-content/uploads/marcio-teruel.jpg'; ?>" alt="">
@@ -170,7 +170,7 @@
 			    		<p>"Nossa experiência com a Ozonean têm sido surpreendente.  Nos identificamos com a agilidade e atuação junto às empresas."
 			    		</p>			    		
 			    	</div>		    	
-			    </div> 	    
+			    </div> --> 	    
 			    </section>
 			</div>	
 		</div>	
