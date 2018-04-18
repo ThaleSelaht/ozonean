@@ -28,9 +28,9 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo get_site_url() . '/blog'; ?>">BLOG</a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="<?php echo get_site_url() . '/contato'; ?>">CONTATO</a>
-      </li>
+      </li> -->
     </ul>			        
   </div>
 </nav>

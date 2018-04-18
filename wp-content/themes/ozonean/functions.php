@@ -16,6 +16,7 @@ function add_estilos_e_scripts() {
 		wp_enqueue_style( 'main', get_template_directory_uri() . '/src/css/main.css');
 	//JS
 		wp_enqueue_script( 'slick', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.min.js');
+		/*wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/src/js/main.js');*/
 }
 add_action('after_setup_theme', 'ozonean_theme_setup');
 add_action('wp_enqueue_scripts', 'add_estilos_e_scripts' );
@@ -31,7 +32,6 @@ function init_widgets($id){
 		'after_title'   => '</h4>'
 	));
 }
-add_action('widgets_init', 'init_widgets');
 
 add_action('widgets_init', 'init_widgets');
 	//Excerp Length

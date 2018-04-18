@@ -5,42 +5,7 @@
 	<div id="banner-principal" class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 d-flex flex-column">
-				<nav class="navbar navbar-expand-md navbar-dark">
-			      <a class="navbar-brand" href="<?php echo get_site_url(); ?>">
-			      	<img src="<?php echo get_home_url() . '/wp-content/uploads/logo-ozonean.png'; ?>" alt="Logo Ozonean">
-			      </a>
-			      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="navbar-toggler-icon"></span>
-			      </button>
-			      <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-			        <ul class="navbar-nav ml-auto">
-			          <li class="nav-item">
-			            <a class="nav-link" href="<?php echo get_site_url() . '/ozonean'; ?>">OZONEAN <span class="sr-only">(current)</span></a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="<?php echo get_site_url() . '/equipe'; ?>">EQUIPE</a>
-			          </li>
-			          <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="servicos-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				          IN COMPANY
-				        </a>
-				        <div class="dropdown-menu" aria-labelledby="servicos-dropdown">
-				          <a class="dropdown-item" href="<?php echo get_site_url() . '/consultorias'; ?>">Consultorias</a>
-				          <a class="dropdown-item" href="<?php echo get_site_url() . '/palestras-e-workshops'; ?>">Palestras e Workshops</a>
-				        </div>
-				      </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="<?php echo get_site_url() . '/empresas'; ?>">EMPRESAS</a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="<?php echo get_site_url() . '/blog'; ?>">BLOG</a>
-			          </li>
-			          <li class="nav-item">
-			            <a class="nav-link" href="<?php echo get_site_url() . '/contato'; ?>">CONTATO</a>
-			          </li>
-			        </ul>			        
-			      </div>
-			    </nav>
+				<?php get_template_part('tpl-navigation'); ?>		
 				<header class="my-auto d-flex justify-content-center">
 					<h1><!-- ALGUMA CHAMADA PARA ALGO IMPORTANTE QUE AINDA NÃO SEI O QUE SERÁ -->
 						SEU PARCEIRO NO SUCESSO DO SEU NEGÓCIO
@@ -63,15 +28,15 @@
 				</div>
 				<div class="col-lg-7 offset-lg-1">
 					<div class="box">
-						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-lab.png'; ?>" alt="Ozonean Lab">
+						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-lab-logo.png'; ?>" alt="Ozonean Lab">
 						<button>Saiba Mais</button>
 					</div>
 					<div class="box">
-						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-tree.png'; ?>" alt="Ozonean Tree">
+						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-tree-logo.png'; ?>" alt="Ozonean Tree">
 						<button>Saiba Mais</button>
 					</div>
 					<div class="box">
-						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-wm.png'; ?>" alt="Ozonean WM">
+						<img class="img-fluid" src="<?php echo get_home_url() . '/wp-content/uploads/ozonean-wm-logo.png'; ?>" alt="Ozonean WM">
 						<button>Saiba Mais</button>
 					</div>
 				</div>
@@ -91,7 +56,13 @@
 					);
 
 					$recent_posts = wp_get_recent_posts( $args );
+					$contador = 1;
 
+					if(count($recent_posts) <= 4){
+						$contador = 2;
+					}
+					
+					for($i = 0; $i < 2; $i++){
 					foreach ($recent_posts as $post ) {
 						$date = $post["post_date"];
 						$date = explode(" ",$date);
@@ -110,7 +81,7 @@
 				    </div>
 					<?php
 						
-					}
+					}}
 					wp_reset_query();
 					?> 
 			    </section>
@@ -154,23 +125,12 @@
  	     	    	<div class="depo-box">
  	     	    		<span>
  	     	    			<img src="<?php echo get_home_url() . '/wp-content/uploads/gilberto-nash.jpg'; ?>" alt="">
-							<h5>Sérgio Nash</h5>
+							<h5>Gilbert Nash</h5>
 							<h6>CEO do CinemallTec LLC</h6>
 			    			</span>
 				    		<p>"O trabalho executado pelo time altamente competente da Ozonean no Brasil foi impecável e sempre no controle de todos os assuntos, negócios, desenvolvimento, marketing, tecnologia. Foi essencial para que Cinemall tenha uma presença no Brasil e começar a operar nesta área completamente nova de t-commerce, entretenimento e e-commerce. Eu recomendo a Ozonean para todas as empresas nos U.S. e ao redor do mundo." </p>			    		
  	     	    	</div>	    	
- 	     	    </div>
- 	     	    <!-- <div>
-			    	<div class="depo-box">
-			    		<span>
-			    			<img src="<?php echo get_home_url() . '/wp-content/uploads/marcio-teruel.jpg'; ?>" alt="">
-							<h5>Márcio Teruel</h5>
-							<h6>Diretor da Contri Contabilidade e da SESCON-SP</h6>
-			    		</span>
-			    		<p>"Nossa experiência com a Ozonean têm sido surpreendente.  Nos identificamos com a agilidade e atuação junto às empresas."
-			    		</p>			    		
-			    	</div>		    	
-			    </div> --> 	    
+ 	     	    </div> 	     	   	    
 			    </section>
 			</div>	
 		</div>	

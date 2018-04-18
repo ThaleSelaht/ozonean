@@ -486,6 +486,81 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	color: #00000F;
 	margin: 5px;
 }
+/***** OZONEAN PAGE *****/
+.ozonean-bts{	
+	display: flex;
+	justify-content: center;		
+}
+.ozonean-bts button{
+	background: transparent;
+	height: 40px;
+	margin: 0 10px 40px 10px;
+	padding: 0 20px;
+	border: 2px solid #FFF;
+	font-weight: bold;
+	color: #FFF;		
+	cursor: pointer;
+	border-radius: 50px;
+}
+#bt-ozonean-lab:hover, #bt-ozonean-lab.active{
+	color: #FFC926;
+	border-color: #FFC926;
+}
+#bt-ozonean-tree:hover, #bt-ozonean-tree.active{
+	color: #00BFA5;
+	border-color: #00BFA5;
+}
+#bt-ozonean-wm:hover, #bt-ozonean-wm.active{
+	color: #F05E4D;
+	border-color: #F05E4D;
+}
+.form-ozonean{
+	background: #00000F;
+	padding: 30px 30px 10px 30px;
+	color: #FFF;
+}
+.form-ozonean h2{
+	font-size: 22px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+}
+.form-ozonean label{
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	color:#7799A9 ;
+}
+.form-ozonean textarea{
+	height: 100px;
+	resize: none;
+}
+.form-ozonean input[type="submit"]{
+	margin-top: 20px;
+	width: 100%;
+	height: 40px;
+	background: transparent;
+	border: #779AAA solid 2px;
+	border-radius: 30px;
+	color: #779AAA;
+	font-weight: bold;
+	cursor: pointer;
+}
+.verticais-box{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 0;
+}
+.verticais-box p{
+	margin-top: 40px;
+	padding: 0 20px;
+	color: #FFF;
+	font-size: 16px;
+}
+
 /***** BLOCK-SIDE WIDGET *****/
 .widget-lateral{
 	background: #00000F;
@@ -672,5 +747,11 @@ button.slick-next, button.slick-next:hover, button.slick-next:focus{
 	}
 	.blog-single-post-bio span img{
 		margin-bottom: 10px;
+	}
+	.ozonean-bts button{
+		height: 60px;
+		margin: 0 6px 30px 6px;
+		padding: 0 5px;
+		border-radius: 10px;
 	}
 }

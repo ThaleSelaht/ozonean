@@ -42,7 +42,7 @@
 												<div class="conteudo"><?php the_content(); ?></div>
 										   </div>
 										   <div class="blog-single-post-bio">
-										   		<h4>Sobre <?php the_author_posts_link(); ?></h4>
+										   		<h4>Por <?php the_author_posts_link(); ?></h4>
 										   		<span>
 										   			<?php  echo get_avatar( get_the_author_meta( 'ID' ) , 100 ); ?>	
 										   			<p><?php echo get_the_author_meta( 'user_description' )?></p>
